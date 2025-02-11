@@ -1,0 +1,138 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ava"
+            android:scaleType="centerCrop"
+            android:elevation="6dp" />
+
+        <!-- Profile Name -->
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arnur Adilkhan"
+            android:textSize="22sp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Username -->
+        <TextView
+            android:id="@+id/profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="arnur_adilkhan"
+            android:textSize="16sp"
+            android:textColor="#757575"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Bio Section -->
+        <TextView
+            android:id="@+id/bio_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bio"
+            android:textSize="18sp"
+            android:textColor="#424242"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/profile_bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manga lover | Anime enthusiast | Aspiring developer"
+            android:textSize="16sp"
+            android:textColor="#616161"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            android:background="@drawable/bio_background" />
+
+        <!-- Edit Bio Button -->
+        <Button
+            android:id="@+id/edit_bio_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Edit Bio"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Social Media Links Section -->
+        <TextView
+            android:id="@+id/social_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Social Media"
+            android:textSize="18sp"
+            android:textColor="#424242"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <!-- Instagram -->
+            <ImageView
+                android:id="@+id/instagram_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_instagram"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="Instagram" />
+
+            <!-- Twitter -->
+            <ImageView
+                android:id="@+id/twitter_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_email"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="Email" />
+
+            <!-- GitHub -->
+            <ImageView
+                android:id="@+id/github_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_github"
+                android:contentDescription="GitHub" />
+        </LinearLayout>
+
+        <!-- Edit Profile Button -->
+        <Button
+            android:id="@+id/edit_profile_button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:elevation="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            />
+    </LinearLayout>
+</ScrollView>

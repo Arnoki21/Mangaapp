@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/browseFragment">
+
+    <!-- Browse Fragment (Start Destination) -->
+    <fragment
+        android:id="@+id/browseFragment"
+        android:name="com.example.mangaapp.ui.theme.BrowseFragment"
+        android:label="Browse"
+        tools:layout="@layout/fragment_browse">
+        <action
+            android:id="@+id/action_browseFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+    <!-- Library Fragment -->
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.example.mangaapp.ui.theme.LibraryFragment"
+        android:label="Library"
+        tools:layout="@layout/fragment_library">
+        <action
+            android:id="@+id/action_libraryFragment_to_libraryMangaFragment"
+            app:destination="@id/libraryMangaFragment" />
+    </fragment>
+
+    <!-- Profile Fragment -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.mangaapp.ui.theme.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile"/>
+
+    <!-- Details Fragment -->
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.mangaapp.ui.theme.DetailsFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="manga"
+            app:argType="com.example.mangaapp.data.Manga"
+            app:nullable="false" />
+    </fragment>
+
+    <!-- ✅ New Library Manga Fragment (For Showing Manga Cover in Library) -->
+    <fragment
+        android:id="@+id/libraryMangaFragment"
+        android:name="com.example.mangaapp.ui.theme.LibraryMangaFragment"
+        android:label="Manga Details"
+        tools:layout="@layout/fragment_library_manga">
+        <argument
+            android:name="manga"
+            app:argType="com.example.mangaapp.data.Manga"
+            app:nullable="false" />
+    </fragment>
+
+</navigation>
